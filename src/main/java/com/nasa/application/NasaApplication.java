@@ -8,7 +8,7 @@ import javax.ws.rs.core.Application;
 
 import com.nasa.resources.RobotResource;
 
-@ApplicationPath("/webapi")
+@ApplicationPath("/rest")
 public class NasaApplication extends Application {	
 	@Override
 	public Set<Class<?>> getClasses() {	    

@@ -36,13 +36,13 @@ public class TestMarsRobot {
 	}
 	
 	@Test(expected=BadRequestException.class)
-	public void testInvalidCommand() {
+	public void testInvalidCommand() throws BadRequestException {
 		RobotResource robotResource = new RobotResource();		
 		String actual = robotResource.insertMovement("AAA");		
 	}
 	
 	@Test(expected=BadRequestException.class)
-	public void testInvalidPosition() {
+	public void testInvalidPosition() throws BadRequestException {
 		RobotResource robotResource = new RobotResource();		
 		String actual = robotResource.insertMovement("MMMMMMMMMMMMMMMMMMMMMMMM");		
 	}
